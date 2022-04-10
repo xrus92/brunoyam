@@ -4,10 +4,9 @@ graph = {'0': ['1', '2'],
 '3': ['1'],
 '4': ['2', '3']}
 
-q = []
 def bfs(graph, start, visited=[]):
 	visited.append(start)
-	global q
+	q = []
 	q.append(start)
 	while q:
 		curr = q.pop(0)
